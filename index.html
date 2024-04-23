@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<!--
+    *Este proyecto simula a una pagina Web Del Clima,
+    *con los 32 estados Mexicanos
+    @Grade: 4°D;
+    @Date: 4-22-2024;
+    @Noctrl: 22308060610341;
+    @Author: Morales Tapia Jesus Ivan;
+    @Teacher: Treviño Tapia Juan Ruben;
+-->
+
+<html lang="es-mex">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Imagen Favicon -->
+        <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">   
+        <link rel="icon" href="img/favicon.ico" type="img/icon">
+
+        <!-- Conexio con CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <title>El clima en México.</title>
+    </head>
+
+    <body class="color_bg_dark" id="body">
+        <div class="header me-2 ms-2 ">
+            <div class="container-fluid my-5 backGround_dark_1" id="container_1">
+                <div class="row">
+                    <div class="col col-12 text-center">
+                        <div class="row">
+                            <div class="col text-end p-2">
+                                <h1 class="text-light font-monospace d d-inline py-4 my-1">Estado de </h1>
+                            </div>
+                            <div class="col text-start p-2">
+                                <div class="row my-0">
+                                    <div class="col col-10 my-0">
+                                        <div class="dropdown align-bottom d d-inline py-0 my-0" >
+                                            <button class="btn btn-outline font-monospace py-0 my-0" type="button" id="dropdown_button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <h1 class="text-primary" title="Presiona para seleccionar el estado" id="state">Chihuahua</h1>
+                                            </button>
+                                            <div class="dropdown-menu bg-black list_data_scroll" id="states">
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Aguascalientes</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Baja California</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Baja California Sur</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Campeche</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Chiapas</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Chihuahua</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Ciudad de México</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Coahuila</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Colima</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Durango</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Estado de México</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Guanajuato</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Guerrero</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Hidalgo</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Jalisco</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Michoacán</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Morelos</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Nayarit</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Nuevo León</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Oaxaca</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Puebla</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Querétaro</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Quintana Roo</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">San Luis Potosí</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Sinala</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Sonora</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Tabasco</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Tamaulipas</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Tlaxcala</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Veracruz</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Yucatán</h6>
+                                                </div>
+                                                <div class="m-0">
+                                                    <h6 class="btn btn-outline-info rounded d d-block text-center m-1 p-0 fw-bold" id="btn1">Zacatecas</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-2 my-3 text-center rounded p-0">
+                                        <img src="img/theme_dark.svg" class="rounded p-2" alt="Imagen donde se coloca el tema de la pagina" width="35px" id="theme_button"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main me-4 ms-4">
+            <div class="container backGround_dark_2" id="container_2">
+                <div class="row ">  
+                    <div class="col col-12 col-md-1">
+                        <div class="row my-2 align-text-top">
+                            <div class="dropdown align-bottom" >
+                                <button class="btn btn-outline-primary font-monospace" type="button" id="button_dropdawn_2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dias
+                                </button>
+                                <div class="dropdown-menu bg-info" id="buttons">
+                                    <div class="m-2 btn btn-light d-flex justify-content-center p-0 0">
+                                        <span class="mx-2 0" id="text-d1"></span>
+                                        <img src="" class="0" alt="Imagen pequeña del Clima" id="img-d1" width="16%"/>
+                                    </div>
+                                    <div class="m-2 btn btn-light d-flex justify-content-center p-0 1">
+                                        <span class="mx-2 1" id="text-d2"></span>
+                                        <img src="" class="1" alt="Imagen pequeña del Clima" id="img-d2" width="16%"/>
+                                    </div>
+                                    <div class="m-2 btn btn-light d-flex justify-content-center p-0 2">
+                                        <span class="mx-2 2" id="text-d3"></span>
+                                        <img src="" class="2" alt="Imagen pequeña del Clima" id="img-d3" width="16%"/>
+                                    </div>
+                                    <div class="m-2 btn btn-light d-flex justify-content-center p-0 3">
+                                        <span class="mx-2 3" id="text-d4"></span> 
+                                        <img src="" class="3" alt="Imagen pequeña del Clima" id="img-d4" width="16%"/>
+                                    </div>
+                                    <div class="m-2 btn btn-light d-flex justify-content-center p-0 4">
+                                        <span class="mx-2 4" id="text-d5"></span>
+                                        <img src="" class="4" alt="Imagen pequeña del Clima" id="img-d5" width="16%"/>
+                                    </div>
+                                    <div class="m-2 btn btn-light d-flex justify-content-center p-0 5">
+                                        <span class="mx-2 5" id="text-d6"></span>
+                                        <img src="" class="5" alt="Imagen pequeña del Clima" id="img-d6" width="16%"/>
+                                    </div>
+                                    <div class="m-2 btn btn-light d-flex justify-content-center p-0 6">
+                                        <span class="mx-2 6" id="text-d7"></span>
+                                        <img src="" class="6" alt="Imagen pequeña del Clima" id="img-d7" width="16%"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-11">
+                        <div class="row">
+                            <p class="fs-1 text-light text-center font-monospace" id="dia"></p>
+                        </div>
+                        <div class="row">
+                            <!-- <div class="col">
+                                <div class="text-center my-4 d-none" id="error">
+                                    <label class="d-flex justify-content-center text-light" for="ethernet_error">ERROR DE CONEXION</label>
+                                    <label class="d-flex justify-content-center text-light" for="ethernet_error">POR FAVOR, VERIFICARLA.</label>
+                                    </div>
+                            </div> -->
+                            <p class="col text-center">  
+                                <img class="ethernet_error text-center rounded-4 d-none" id="ethernet_error" src="img/error_inthertet_red.svg" alt="imagen de falla del error inthertet">
+                                <img class="m-4" id="img" src="" alt="Imagen del clima." width="20%"/>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p class="fs-2 text-light fw-bolder text-center font-monospace">
+                                <span class="rounded" id="grados"></span>
+                            </p>
+                        </div>
+                        <div class="row my-3">
+                            <span class="text-light fw-light text-center">
+                                <img src="img/10d.svg" alt="humedad" width="8%">
+                                <span class="font-monospace fs-3 " id="pre"></span>
+                                <img src="img/50d.svg" alt="velocidad el viento" width="8%">
+                                <span class="font-monospace fs-3" id="vel"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pestania_principal">    
+            <div class="aviso-cookies font-monospace" id="aviso-cookies">
+
+                <img class="galleta" src="img/cookie.svg" alt="imagen svg de galleta">
+
+                <h3 class="titulo text-success fw-bold fs-1">Cookie</h3>
+
+                <p class="parrafo">Me gustaria hacerle saber que esta cookie es tan solo para acceder al municipio.</p>
+
+                <button class="boton fs-5" id="btn-aceptar-cookies">Aceptar</button>
+                <button class="boton-cancelar fs-5" id="btn-cancelar-cookies">Cancelar</button>
+
+                <a class="enlace text-success" href="aviso-cookies.html">Aviso de Cookies</a>
+            </div>
+
+            <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+        </div>
+
+        <!-- Conexion con JS -->
+        <script src="js/app.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

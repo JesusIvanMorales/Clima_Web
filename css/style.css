@@ -1,0 +1,187 @@
+/* 
+	*Este proyecto simula a una pagina Web Del Clima,
+	*con los 32 estados Mexicanos
+	@Grade: 4°D;
+	@Date: 4-22-2024;
+	@Noctrl: 22308060610341;
+	@Author: Morales Tapia Jesus Ivan;
+	@Teacher: Treviño Tapia Juan Ruben; 
+*/
+
+
+.color_bg_dark {
+    transition: 1s;
+    background-color: black;
+} 
+
+.color_bg_light {
+    transition: 1s;
+    background-color: aqua;
+} 
+
+.backGround_dark_1 {
+    transition: 1s;
+    background-color: #4CB9F3;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: white;
+}
+
+.backGround_dark_2 {
+    transition: 1s;
+    background-color: #4CB9F3;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.backGround_light_1 {
+    transition: 1s;
+    background-color: #0059ff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: white;
+}
+
+.backGround_light_2 {
+    transition: 1s;
+    background-color: #0059ff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.bg-color {
+    background-color: #e8ebed;
+}
+
+.list_data_scroll {
+    max-height: 200px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.text_color_title {
+    color:aquamarine;
+}
+
+.aviso-cookies {
+	display: none;
+	background: #fff;
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	padding-top: 60px;
+	box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+	text-align: center;
+}
+
+.aviso-cookies.activo {
+	display: block;
+}
+
+
+.aviso-cookies .ethernet_error {
+	display: block;
+	justify-content: center;
+	position: absolute;
+	z-index: 100; 
+}
+
+.aviso-cookies .galleta {
+	max-width: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo {
+	margin-bottom: 15px;
+}
+
+.aviso-cookies .boton {
+	width: 100%;
+	background: #5e75f5;
+	border: none;
+	color: #fff;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.aviso-cookies .boton-cancelar {
+	width: 100%;
+	background: #f84343;
+	border: none;
+	color: #fff;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+	background: #0011ff;
+}
+
+.aviso-cookies .boton-cancelar:hover {
+	background: #f70202;
+}
+
+.aviso-cookies .enlace {
+	color: #4DBFFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+	transition: 0.2s;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.fondo-aviso-cookies {
+	display: none;
+	background: rgba(0,0,0,.20);
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.fondo-aviso-cookies.activo {
+	display: block;
+}
+
+#text_id {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    padding: 0;
+}
+
+#theme_button:hover {
+	transition: 0.6s;
+	background-color: #4783f3;
+}
+
+#grados:hover {
+	transition: 0.6s;
+	background-color: #4783f3;
+}
